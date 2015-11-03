@@ -11,4 +11,6 @@ Select the languages you know and see in which country they are spoken by how ma
 + responsive design
 + interactive language menu (a new selection field is added automatically)
 
-<text align="center">- developed with Google Maps API -</text>
+<b>- developed with Google Maps API -</b>
+
+Feel free to contribute! ;)
