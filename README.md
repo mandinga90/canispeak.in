@@ -11,6 +11,10 @@ Select the languages you know and see in which country they are spoken by how ma
 + responsive design
 + interactive language menu (a new selection field is added automatically)
 
+# current Bugs:
++ polygons shifting by zoom out
++ some German language descriptions
+
 <b>- developed with Google Maps API -</b>
 
 Feel free to contribute! ;)
