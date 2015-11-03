@@ -1,0 +1,362 @@
+html, body, #map-canvas { height: 80%; margin: 0; padding: 0;}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-family: 'Open Sans', sans-serif;
+	/*background-image: url("sprachrechner-img.png");*/
+}
+
+h1 {
+	background: #fff;
+	width: 8em;
+}
+
+.map {
+	border: 2px solid gray;
+}
+
+/* Contact */
+
+#contact {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color: #fff;
+	border: 2px solid gray;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#contact td {
+	vertical-align: top;
+}
+
+#contact textarea {
+	width: 400px;
+	height: 200px;
+}
+
+#about {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color: #fff;
+	border: 2px solid gray;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#impressum {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color: #fff;
+	border: 2px solid gray;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.text {
+	padding: 1em 1em 1em 1em;
+}
+
+/* navigation bar */
+
+/* src: http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly */
+
+#nav
+{
+	overflow: hidden;
+	text-align: center;
+}
+
+#nav > a
+{
+	display: none;
+	text-decoration: none;
+	color: #fff;
+	background: #71a236;
+	font-weight: bold;
+}
+
+#nav li
+{
+	position: relative;
+	/*text-align: center;*/
+	font-weight: bold;
+}
+
+#nav > ul
+{
+	height: 1.5em;
+	list-style-type: none;
+	background-color: #71a236;
+	width: 100%;
+	margin-left: -2.5em;
+
+	border-width: 0.2em;
+	border-style: solid;
+	border-color: #fff;
+}
+
+#nav > ul > li
+{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#nav > ul > li > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* color gradient */
+
+#gradient {
+	height: 25px;
+	width: 20%;
+	background: -webkit-linear-gradient(left, red , yellow, green); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, red , yellow, green); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, red , yellow, green); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, red , yellow, green); /* Standard syntax (must be last) */
+	float: left;
+}
+
+#gradient-table  {
+	font-weight: bold;
+	color: #000000;
+	height: 25px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#mapkey-heading {
+	background: #fff;
+	width: 10em;
+	border: 2px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 0px;
+}
+
+#map-key {
+	line-height: 130%;
+}
+
+#map-keyzero {
+	height: 25px;
+	width: 30px;
+	background: #000000;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	vertical-align: bottom;
+}
+
+#gradient-td-left {
+	text-align: left;
+}
+
+#gradient-td-center {
+	text-align: right;
+}
+
+#gradient-td-right {
+	text-align: right;
+}
+
+#separator {
+	clear: both;
+}
+
+#heading {
+	background-color: #28782c;
+	border: solid 5px;
+	border-color: #000000;
+	color: #fff;
+	font-weight: bold;
+	font-size: 150%;
+	padding: 5px;
+}
+
+#selection-menu {
+	background-color: #449b34;
+}
+
+#selection-menu select {
+	width: 200px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin: 10px;
+	border: 1px solid #111;
+	background: #fff;
+	padding: 5px 5px 5px 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	height: 30px;
+}
+
+#selection-menu option {
+	background: #fff;
+}
+
+#map-info {
+	display: none;
+	background-color: #fff;
+	margin-top: 10px;
+	border: 2px solid gray;
+	border-radius: 2px;
+	padding: 1em 1em 1em 1em;
+}
+
+
+@media only screen and ( max-width: 760px ) {
+
+	body {
+		font-size: 120%;
+	}
+
+	h1 {
+		font-size: 1.2em;
+		width: 8em;
+	}
+
+	#contact {
+		width: 100%;
+	}
+
+	#contact input[type="text"] {
+		width: 90%;
+	}
+
+	#contact td {
+		vertical-align: top;
+	}
+
+	#contact textarea {
+		width: 150px;
+		height: 80px;
+	}
+
+	#about {
+		width: 100%;
+	}
+
+	#impressum {
+		width: 100%;
+	}
+
+	#selection-menu select {
+		width: 90%;
+		height: 2em;
+		font-size: 0.8em; /* fallback */
+		font-size: 4vw; /* viewport width */
+		margin: 5px;
+	}
+
+	#map-key {
+		line-height: 200%;
+		padding-bottom: 1em;
+	}
+
+	#gradient {
+		width: 80%;
+		height: 2em;
+		background: -webkit-linear-gradient(left, red , yellow, green); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, red , yellow, green); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, red , yellow, green); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, red , yellow, green); /* Standard syntax (must be last) */
+	}
+
+	#gradient-table  {
+		font-weight: bold;
+		color: #000000;
+		width: 100%;
+	}
+
+	#map-keyzero {
+		width: 20%;
+		height: 2em;
+		line-height: 220%;
+	}
+
+	#map-canvas {
+		height: 100%;
+	}
+
+	/* navigation bar */
+
+	#nav {
+		position: relative;
+		width: 8em;
+		padding-bottom: 1em;
+	}
+
+	#nav:target {
+		padding-bottom: 8em;
+	}
+
+	#nav:not( :target ) > a:first-of-type,
+	#nav:target > a:last-of-type {
+		display: block;
+	}
+
+	#nav > ul {
+		height: auto;
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	#nav:target > ul {
+		display: block;
+		padding-left: 0;
+		margin-left: 0em;
+		text-indent: 0.5em;
+	}
+
+	#nav > ul > li {
+		width: 100%;
+		float: none;
+		text-align: left;
+	}
+
+	#mapkey-heading {
+		font-size: 2em; /* fallback */
+		font-size: 4vw; /* viewport width: relative size to container width */
+
+		/* viewports:
+		1. http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container
+		2. https://css-tricks.com/viewport-sized-typography
+		*/
+		
+	}
+
+	#map-info table, #map-info th, #map-info td {
+		border: 2px solid black;
+		text-indent: 1px;
+	}
+
+	#map-info table {
+		margin-top: 5px;
+		background: #fff;
+		border-collapse: collapse;
+    	empty-cells: hide;
+   		margin-left: auto;
+   		margin-right: auto;
+	}
+
+	#map-info th {
+		font-weight: bold;
+	}
+
+	.row-language {
+		font-weight: bold;
+	}
+
+}

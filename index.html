@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="description" content="canispeak.in">
+	<meta name="keywords" content="language, foreign language, country, language distribution, world, world language, science">
+	<meta name="author" content="Manuel Laudam">
+	
+	<!-- blocks full scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>canispeak.in | Can i speak my language in a foreign country?</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvrrJzDXc-A4lTRMNU3bXUIQ16hxxHpCk"></script>
+
+	<!-- JQuery lib -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="countries.js"></script>
+
+	<!-- Copyright (c) 2000-2015 etracker GmbH. All rights reserved. -->
+	<!-- This material may not be reproduced, displayed, modified or distributed -->
+	<!-- without the express prior written permission of the copyright holder. -->
+	<!-- etracker tracklet 4.0 -->
+	<script type="text/javascript">
+	//var et_pagename = "";
+	//var et_areas = "";
+	//var et_url = "";
+	//var et_target = "";
+	//var et_ilevel = 0;
+	//var et_tval = "";
+	//var et_cust = 0;
+	//var et_tonr = "";
+	//var et_tsale = 0;
+	//var et_basket = "";
+	//var et_lpage = "";
+	//var et_trig = "";
+	//var et_sub = "";
+	//var et_se = "";
+	//var et_tag = "";
+	</script>
+	<script id="_etLoader" type="text/javascript" charset="UTF-8" data-secure-code="TkmsQx" src="//static.etracker.com/code/e.js"></script>
+	<noscript><link rel="stylesheet" media="all" href="//www.etracker.de/fcnt_css.php?et=TkmsQx&amp;v=4.0&amp;java=n&amp;et_easy=0&amp;et_pagename=&amp;et_areas=&amp;et_ilevel=0&amp;et_target=,0,0,0&amp;et_lpage=0&amp;et_trig=0&amp;et_se=0&amp;et_cust=0&amp;et_basket=&amp;et_url=&amp;et_tag=&amp;et_sub=&amp;et_organisation=&amp;et_demographic=" /></noscript>
+	<!-- etracker tracklet 4.0 end -->
+
+</head>
+<body>
+
+ 	<!-- Facebook Social Plugin -->
+ 	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Facebook Social Plugin End -->
+
+	<h1>canispeak.in</h1>
+
+	<!-- binds in Facebook Social Plugin -->
+	<div class="fb-like" data-href="http://www.facebook.com/sprachrechner" data-width="50" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+
+	<!-- menu -->
+	<nav id="nav">
+		<a href="#nav" title="Show navigation">MENU</a>
+		<a href="#" title="Hide navigation">MENU</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="legal-notice.html">Legal Notice</a></li>
+		</ul>
+	</nav>
+	<!-- menu end -->
+
+	<!-- binds in map -->
+	<div id="map-canvas" class="map"></div>
+
+	<div id="map-info"></div>
+	<br />
+	<!-- map key -->
+	<div id="mapkey-heading">
+		<h3>Legend:</h3>
+		Language Distribution:
+	</div>
+	<br />
+	<div id="map-key">
+		<div id="map-keyzero">0%</div>
+		<div id="gradient">
+			<table id="gradient-table">
+				<tr>
+					<td id="gradient-td-left">1%</td>
+					<td id="gradient-td-center">50%</td>
+					<td id="gradient-td-right">100%</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div id="separator"></div>
+
+	<form name="selection-form">
+		<fieldset id="selection-menu">
+			<legend id="heading">
+				Selection
+			</legend>
+			<select autofocus onchange="addChoosebox(); return false;">
+				<option value="blank" selected>Select language...</option>
+				<option value="Albanian">Albanian</option>
+				<option value="Amharic">Amharic</option>
+				<option value="Arabic">Arabic</option>
+				<option value="Armenian">Armenian</option>
+				<option value="Azerbaijanian">Azerbaijanian</option>
+				<option value="Bengali">Bengali</option>
+				<option value="Bosnian">Bosnian</option>
+				<option value="Bulgarian">Bulgarian</option>
+				<option value="Burmese">Burmese</option>
+				<option value="Catalan">Catalan</option>
+				<option value="Chinese">Chinese</option>
+				<option value="Croatian">Croatian</option>
+				<option value="Czech">Czech</option>
+				<option value="Danish">Danish</option>
+				<option value="Dari">Dari</option>
+				<option value="Dutch">Dutch</option>
+				<option value="Dzongkha">Dzongkha</option>
+				<option value="English">English</option>
+				<option value="Estonian">Estonian</option>
+				<option value="Filipino">Filipino</option>
+				<option value="Finnish">Finnish</option>
+				<option value="French">French</option>
+				<option value="Georgian">Georgian</option>
+				<option value="German">German</option>
+				<option value="Greek">Greek</option>
+				<option value="Hebrew">Hebrew</option>
+				<option value="Hindi">Hindi</option>
+				<option value="Hungarian">Hungarian</option>
+				<option value="Icelandic">Icelandic</option>
+				<option value="Indonesian">Indonesian</option>
+				<option value="Inuktitut">Inuktitut</option>
+				<option value="Iranian Persian">Iranian Persian</option>
+				<option value="Italian">Italian</option>
+				<option value="Japanese">Japanese</option>
+				<option value="Kazakh">Kazakh</option>
+				<option value="Khmer">Khmer</option>
+				<option value="Kinyarwanda">Kinyarwanda</option>
+				<option value="Kirgisisch">Kirgisisch</option>
+				<option value="Kirundi">Kirundi</option>
+				<option value="Korean">Korean</option>
+				<option value="Lao">Lao</option>
+				<option value="Latvian">Latvian</option>
+				<option value="Lithuanian">Lithuanian</option>
+				<option value="Luxembourgish">Luxembourgish</option>
+				<option value="Macedonian">Macedonian</option>
+				<option value="Malay">Malay</option>
+				<option value="Maltese">Maltese</option>
+				<option value="Moldovan">Moldovan</option>
+				<option value="Mongolian">Mongolian</option>
+				<option value="Montenegrin Riviera">Montenegrin Riviera</option>
+				<option value="Nepali">Nepali</option>
+				<option value="Norwegian">Norwegian</option>
+				<option value="Papiamento">Papiamento</option>
+				<option value="Polish">Polish</option>
+				<option value="Portuguese">Portuguese</option>
+				<option value="Romanian">Romanian</option>
+				<option value="Russian">Russian</option>
+				<option value="Serbian">Serbian</option>
+				<option value="Sinhala">Sinhala</option>
+				<option value="Slovak">Slovak</option>
+				<option value="Slovenian">Slovenian</option>
+				<option value="Somali">Somali</option>
+				<option value="Spanish">Spanish</option>
+				<option value="Swahili">Swahili</option>
+				<option value="Swedish">Swedish</option>
+				<option value="Tajiki">Tajiki</option>
+				<option value="Tetum">Tetum</option>
+				<option value="Thai">Thai</option>
+				<option value="Tigrinya">Tigrinya</option>
+				<option value="Turkish">Turkish</option>
+				<option value="Turkmen">Turkmen</option>
+				<option value="Ukrainian">Ukrainian</option>
+				<option value="Urdu">Urdu</option>
+				<option value="Uzbek">Uzbek</option>
+				<option value="Vietnamese">Vietnamese</option>
+				<option value="Zulu">Zulu</option>
+			</select>
+		</fieldset>
+	</form>
+	<br />
+
+</body>
+</html>
+
