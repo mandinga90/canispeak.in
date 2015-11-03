@@ -1,6 +1,6 @@
 # [canispeak.in]
 
-Can I speak my language in a foreign country?
+Can I speak my language in other countries?
 
 Select the languages you know and see in which country they are spoken by how many people.
 
